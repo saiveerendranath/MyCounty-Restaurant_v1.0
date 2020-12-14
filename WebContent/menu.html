@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" href="css/dattastyles.css">
+<style>
+	.btn-color{
+		background-color:white;
+		color:#0a0852;
+		border:2px solid #0a0852;
+	}
+	
+	.btn-color:hover{
+		background-color:#0a0852;
+		color:white;
+	}
+</style>
+<head>
+    <title>MyCounty Menu</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" >
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./home.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./menu.html"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul> 
+            </div>
+            <div class="dropdown">
+                <span class="fa fa-user fa-lg dropdown-toggle text-white" data-toggle="dropdown"></span>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#login">Login</a>
+                    <a class="dropdown-item" href="register.html">Register</a>
+                </div>
+            </div>
+
+                           
+        </div>
+    </nav>
+    <header>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="img-fluid" src="img/homepage1.jpg" alt="" height="100%" width="100%" style="opacity: 0.7;">
+                  <div class="carousel-caption text-white">
+                    <h3>Enjoy Your Food</h3>
+                    <p>Like Ever Before in MyCounty</p>
+                  </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+
+        
+        <section id="portfolio">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="gallary col-11 mx-auto">
+                        <h1 class="galler-title"> Menu</h1>
+                    </div>
+                    <div class="col-1 align-self-center">
+                        <h5 id="money"></h5>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-12">
+                		<h2 id="item"></h2>
+                	</div>
+                </div>
+                
+                <div class="row ">
+                    <div class="col-12">
+                        <button class="btn btn-default filter-button" data-filter="all">All</button>
+                        <button class="btn btn-default filter-button" data-filter="veg">Vegitarian</button>
+                        <button class="btn btn-default filter-button" data-filter="nonveg">Non-Vegitarian</button>
+                        <button class="btn btn-default filter-button" data-filter="desert">Desert</button>
+                    </div>
+                </div>
+                <div class="row row-content">
+                    <div class="gallery_product col-4 filter center veg">
+                        <div class="card card-body">
+                            <dl class="row">
+                                <dt class="col-12 card-col"><img class="img-thumbnail" src="food/panner1.jpg"></dt>
+                                <dt class="col-7 card-col align-self-center"><h5>Paneer Biryani  </h5></dt>
+                                <dt class="col-2 card-col"><h2><span class="badge badge-pill badge-secondary">499/-</span></h2></dt>
+                                <dt class="col-4 offset-2 card-col align-self-center"><button class="btn btn-color" id="Paneer Biryani" value="499" onclick="addFunction(this.id,this.value)">ADD</button></dt>
+                                <dt class="col-6 card-col align-self-center"><button class="btn btn-color" id="Paneer Biryani" value="499" onclick="removeFunction(this.id,this.value)">REMOVE</button></dt>
+                                
+                            </dl>
+                        </div>
+                        
+                    </div>
+                    <div class="gallery_product col-4 filter center nonveg">
+                        <div class="card card-body">
+                            <dl class="row">
+                                <dt class="col-12 card-col"><img class="img-thumbnail" src="food/chicken_biryani.jpeg"></dt>
+                                <dt class="col-7 card-col align-self-center"><h5>Chciken Biryani  </h5></dt>
+                                <dt class="col-2 card-col"><h2><span class="badge badge-pill badge-secondary">699/-</span></h2></dt>
+                                <dt class="col-4 offset-2 card-col align-self-center"><button class="btn btn-color" id="Chicken Biryani" value="499" onclick="addFunction(this.id,this.value)">ADD</button></dt>
+                                <dt class="col-6 card-col align-self-center"><button class="btn btn-color" id="Chicken Biryani" value="499" onclick="removeFunction(this.id,this.value)">REMOVE</button></dt>
+                                
+                            </dl>
+                        </div>
+                        
+                    </div>
+                    <div class="gallery_product col-4 filter center nonveg">
+                        <div class="card card-body">
+                            <dl class="row">
+                                <dt class="col-12 card-col"><img class="img-thumbnail" src="food/egg1.jpeg"></dt>
+                                <dt class="col-7 card-col align-self-center"><h5>Egg Biryani  </h5></dt>
+                                <dt class="col-2 card-col"><h2><span class="badge badge-pill badge-secondary">399/-</span></h2></dt>
+                                <dt class="col-4 offset-2 card-col align-self-center"><button class="btn btn-color" id="paneer" value="499" onclick="addFunction(this.id,this.value)">ADD</button></dt>
+                                <dt class="col-6 card-col align-self-center"><button class="btn btn-color" id="paneer" value="499" onclick="removeFunction(this.id,this.value)">REMOVE</button></dt>
+                                
+                            </dl>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row row-content">
+                    <div class="col-2 offset-5 ">
+                        <button class="btn btn-color btn-block">PAY</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              Tel.: +852 1234 5678<br>
+		              Fax: +852 8765 4321<br>
+		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+</body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <script src="jquery/dist/jquery.slim.min.js"></script>
+  <script src="popper.js/dist/umd/popper.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    sum=0;
+    items=[];
+    
+    function addFunction(id,value)
+    {
+    	
+    	sum=sum+parseInt(value);
+    	items.push(id);
+    	document.getElementById("money").innerHTML=sum+"/-";
+    	document.getElementById("item").innerHTML=items;
+    }
+    
+    function removeFunction(id,value)
+    {
+    	
+    	for(var i=0;i<items.length;i++)
+    		{
+    			if(items[i]===id)
+    				{
+    					sum=sum-parseInt(value);
+    					items.splice(i,1);
+    					document.getElementById("money").innerHTML=sum+"/-";
+    					document.getElementById("item").innerHTML=items;
+    					break;
+    				}
+    		}
+    }
+    
+    function assignValue()
+    {
+        document.getElementById("pay").value=sum;
+        alert(document.getElementById("pay").value);
+
+    }
+    
+</script>
+  <script>
+      $(document).ready(function(){
+
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            if(value=="all")
+            {
+                $('.filter').show('1000');
+            }
+            else
+            {
+                $(".filter").not('.'+value).hide('3000');
+                $(".filter").filter('.'+value).show('3000');
+            }
+        });
+            if($(".filter-button").removeClass("active")){
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+      });
+  </script>
+
+ 
+
+</html>
